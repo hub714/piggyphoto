@@ -321,6 +321,7 @@ class camera(object):
 
         if destpath:
             cfile.save(destpath)
+            gp.gp_file_unref(cfile._cf)
         else:
             return cfile
 
